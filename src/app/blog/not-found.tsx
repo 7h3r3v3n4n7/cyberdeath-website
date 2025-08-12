@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 export default function BlogNotFound() {
   return (
     <div className="min-h-screen bg-black text-green-400">
-      <Header menuState="blog" currentTime="" />
+      <Header />
       
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto text-center">

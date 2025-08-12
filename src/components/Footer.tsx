@@ -15,10 +15,10 @@ export default function Footer() {
             className="glitch"
             data-text="CDS"
           />
-          <span className="text-lg font-bold">CYBERDEATH</span>
+          <span className="text-lg font-bold">CYBERDEATH SECURITY</span>
         </div>
         <p className="text-green-500 text-sm">
-          © {new Date().getFullYear()} CyberDeath Security. All rights reserved. Stay secure, stay ethical.
+          © {new Date().getFullYear()} CyberDeath Security. All rights reserved. Stay secure, stay frosty.
         </p>
         <div className="mt-4 text-green-400/60 text-xs">
           <span className="terminal-cursor">SYSTEM_STATUS: ONLINE</span>

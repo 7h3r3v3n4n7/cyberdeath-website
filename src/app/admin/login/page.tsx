@@ -48,7 +48,7 @@ export default function AdminLogin() {
 
   return (
     <div className="min-h-screen bg-black text-green-400">
-      <Header menuState="admin" setMenuState={() => {}} currentTime="" />
+      <Header />
       
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-md mx-auto">

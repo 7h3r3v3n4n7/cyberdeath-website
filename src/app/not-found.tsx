@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-black text-green-400">
-      <Header menuState="terminal" currentTime="" />
+      <Header />
       
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto text-center">
@@ -39,39 +39,7 @@ export default function NotFound() {
             </div>
           </div>
 
-          <div className="mt-12 p-6 bg-gray-900 rounded-lg border border-green-400/30">
-            <h3 className="text-lg font-bold mb-4 text-green-300">
-              Navigation Options
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Link
-                href="/"
-                className="p-4 border border-green-400/30 rounded hover:bg-green-400/10 transition-colors"
-              >
-                <div className="text-2xl mb-2">🏠</div>
-                <div className="font-bold text-green-300">Home</div>
-                <div className="text-sm text-gray-400">Main terminal</div>
-              </Link>
-              
-              <Link
-                href="/blog"
-                className="p-4 border border-green-400/30 rounded hover:bg-green-400/10 transition-colors"
-              >
-                <div className="text-2xl mb-2">📚</div>
-                <div className="font-bold text-green-300">Blog</div>
-                <div className="text-sm text-gray-400">Security articles</div>
-              </Link>
-              
-              <Link
-                href="/projects"
-                className="p-4 border border-green-400/30 rounded hover:bg-green-400/10 transition-colors"
-              >
-                <div className="text-2xl mb-2">💻</div>
-                <div className="font-bold text-green-300">Projects</div>
-                <div className="text-sm text-gray-400">My work</div>
-              </Link>
-            </div>
-          </div>
+          
         </div>
       </main>
       

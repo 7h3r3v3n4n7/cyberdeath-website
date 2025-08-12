@@ -110,6 +110,8 @@ body {
   100% { transform: translateY(100vh); }
 }
 
+
+
 /* Typewriter effect */
 .typewriter {
   overflow: hidden;
@@ -197,3 +199,38 @@ body {
 .terminal-link:active {
   color: #00cc00;
 }
+
+/* Matrix chars (global) */
+.matrix-char {
+  position: absolute;
+  top: -10vh;
+  color: rgba(0, 255, 0, 0.6);
+  font-family: var(--font-mono), 'Courier New', monospace;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
+.matrix-overlay {
+  pointer-events: none;
+}
+
+/* Matrix DOM animation */
+@keyframes matrix-fall {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(110%);
+  }
+}
+
+.animate-matrix-fall {
+  animation-name: matrix-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Ensure typed lines are visible regardless of glitch/typewriter classes */
+.__typed, .__typed * { opacity: 1 !important; text-shadow: none !important; }

@@ -62,7 +62,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
   if (loading || !post) {
     return (
       <div className="min-h-screen bg-black text-green-400">
-        <Header menuState="blog" setMenuState={() => {}} currentTime="" />
+        <Header />
         <div className="container mx-auto px-4 py-8">
           <div className="text-center">
             <h1 className="text-2xl font-bold mb-4">Loading...</h1>
@@ -75,7 +75,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
 
   return (
     <div className="min-h-screen bg-black text-green-400">
-      <Header menuState="blog" setMenuState={() => {}} currentTime="" />
+      <Header />
       
       <main className="container mx-auto px-4 py-8">
         <article className="max-w-4xl mx-auto">

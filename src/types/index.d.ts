@@ -91,6 +91,9 @@ declare global {
     x: number;
     y: number;
     speed: number;
+    char: string;
+    opacity: number;
+    size: number;
   }
 
   // Project Types
@@ -108,7 +111,7 @@ declare global {
   interface HeaderProps {
     menuState: string;
     setMenuState?: (state: string) => void;
-    currentTime: string;
+    currentTime?: string;
   }
 
   interface TypingTextProps {
